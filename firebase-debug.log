@@ -1,0 +1,106 @@
+[debug] [2023-12-13T20:04:47.562Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T20:04:47.564Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yoshi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-13T20:04:47.565Z] CLI Version:   13.0.1
+[debug] [2023-12-13T20:04:47.565Z] Platform:      win32
+[debug] [2023-12-13T20:04:47.565Z] Node Version:  v18.18.0
+[debug] [2023-12-13T20:04:47.566Z] Time:          Thu Dec 14 2023 05:04:47 GMT+0900 (日本標準時)
+[debug] [2023-12-13T20:04:47.567Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T20:04:47.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T20:04:47.573Z] > authorizing via signed-in user (motonadev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\yoshi\Desktop\Dev\todo-react-firebase
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-13T20:05:50.009Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-13T20:05:50.645Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-13T20:05:50.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todo-74a79 (Todo) 
+[info] 
+=== Firestore Setup
+[debug] [2023-12-13T20:05:53.299Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todo-74a79/services/firestore.googleapis.com [none]
+[debug] [2023-12-13T20:05:53.299Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todo-74a79/services/firestore.googleapis.com x-goog-quota-user=projects/todo-74a79
+[debug] [2023-12-13T20:05:54.378Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todo-74a79/services/firestore.googleapis.com 200
+[debug] [2023-12-13T20:05:54.378Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todo-74a79/services/firestore.googleapis.com [omitted]
+[debug] [2023-12-13T20:05:54.378Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default) [none]
+[debug] [2023-12-13T20:05:54.547Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default) 200
+[debug] [2023-12-13T20:05:54.547Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default) {"name":"projects/todo-74a79/databases/(default)","uid":"8ebd50e3-3a2a-4dc8-92a3-5a7030299aef","createTime":"2023-11-30T04:15:07.724178Z","updateTime":"2023-11-30T04:15:07.724178Z","locationId":"asia-northeast1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-12-13T19:05:57.682150Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"b","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMOz/o+bjYMDMM7cl5Dw6oID"}
+[debug] [2023-12-13T20:05:54.547Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-12-13T20:05:54.548Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T20:05:54.548Z] > authorizing via signed-in user (motonadev@gmail.com)
+[debug] [2023-12-13T20:05:54.548Z] [iam] checking project todo-74a79 for permissions ["firebase.projects.get"]
+[debug] [2023-12-13T20:05:54.549Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-74a79:testIamPermissions [none]
+[debug] [2023-12-13T20:05:54.549Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-74a79:testIamPermissions x-goog-quota-user=projects/todo-74a79
+[debug] [2023-12-13T20:05:54.549Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-74a79:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-13T20:05:55.199Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-74a79:testIamPermissions 200
+[debug] [2023-12-13T20:05:55.199Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-74a79:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-13T20:05:58.026Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/releases pageSize=10&pageToken=
+[debug] [2023-12-13T20:05:58.421Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/releases 200
+[debug] [2023-12-13T20:05:58.421Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/releases {"releases":[{"name":"projects/todo-74a79/releases/cloud.firestore","rulesetName":"projects/todo-74a79/rulesets/d9fea941-a75c-4c50-8062-8a6d0e23182e","createTime":"2023-11-30T04:15:15.501913Z","updateTime":"2023-11-30T04:35:03.763957Z"}]}
+[debug] [2023-12-13T20:05:58.422Z] Found ruleset: projects/todo-74a79/rulesets/d9fea941-a75c-4c50-8062-8a6d0e23182e
+[debug] [2023-12-13T20:05:58.422Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/rulesets/d9fea941-a75c-4c50-8062-8a6d0e23182e [none]
+[debug] [2023-12-13T20:05:59.524Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/rulesets/d9fea941-a75c-4c50-8062-8a6d0e23182e 200
+[debug] [2023-12-13T20:05:59.525Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/todo-74a79/rulesets/d9fea941-a75c-4c50-8062-8a6d0e23182e [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-13T20:06:33.296Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-12-13T20:06:33.298Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-12-13T20:06:33.420Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-12-13T20:06:33.420Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-12-13T20:06:33.423Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-12-13T20:06:33.423Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todo-74a79/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/todo-74a79/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[debug] [2023-12-13T20:06:33.426Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-74a79 [none]
+[debug] [2023-12-13T20:06:33.755Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-74a79 200
+[debug] [2023-12-13T20:06:33.755Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-74a79 {"projectId":"todo-74a79","projectNumber":"33305926224","displayName":"Todo","name":"projects/todo-74a79","resources":{"hostingSite":"todo-74a79"},"state":"ACTIVE","etag":"1_6421aac8-57a0-47ab-9d45-8c1f1d76ec59"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-13T20:08:35.233Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-13T20:08:35.354Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-13T20:08:35.354Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\yoshi\Desktop\Dev\todo-react-firebase 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=974592594&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-12-13T20:09:01.328Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-12-13T20:09:01.329Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-12-13T20:09:01.663Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-12-13T20:09:01.663Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-12-13T20:09:01.669Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-12-13T20:09:01.955Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-12-13T20:09:01.956Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MoGomez-dev","id":141193496,"node_id":"U_kgDOCGpxGA","avatar_url":"https://avatars.githubusercontent.com/u/141193496?v=4","gravatar_id":"","url":"https://api.github.com/users/MoGomez-dev","html_url":"https://github.com/MoGomez-dev","followers_url":"https://api.github.com/users/MoGomez-dev/followers","following_url":"https://api.github.com/users/MoGomez-dev/following{/other_user}","gists_url":"https://api.github.com/users/MoGomez-dev/gists{/gist_id}","starred_url":"https://api.github.com/users/MoGomez-dev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MoGomez-dev/subscriptions","organizations_url":"https://api.github.com/users/MoGomez-dev/orgs","repos_url":"https://api.github.com/users/MoGomez-dev/repos","events_url":"https://api.github.com/users/MoGomez-dev/events{/privacy}","received_events_url":"https://api.github.com/users/MoGomez-dev/received_events","type":"User","site_admin":false,"name":"Motonari","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2023-08-02T00:29:38Z","updated_at":"2023-09-22T18:32:05Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":4321,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as MoGomez-dev 
+[info] 
