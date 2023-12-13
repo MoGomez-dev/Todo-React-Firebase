@@ -122,7 +122,7 @@ export const Header = ({unit, isAuth, setUnit, setColor, color}) => {
             </li>}
             
             <li>
-                <Link to='https://github.com/MoGomez-dev' ><FaGithub /></Link>
+                <Link to='https://github.com/MoGomez-dev/Todo-React-Firebase' ><FaGithub /></Link>
             </li>
         </ul>
       </HeaderWrapper>
