@@ -207,4 +207,8 @@ const TimeUnitButton = styled.button`
   border-radius: 5px;
   font-size: 18px;
   border: 1px solid;
+<<<<<<< HEAD
 `
+=======
+`
+>>>>>>> cb656d9969b0cb2aae619b52b6d45039b94dae46
